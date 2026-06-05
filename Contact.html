@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Contact Us – TECHTide</title>
+<link rel="stylesheet" href="Assets/CSS/style.css">
+<link rel="stylesheet" href="Assets/CSS/CONTACT.CSS">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo-container">
+    <img src="Assets/Images/TECHTIDE LOGO.png" alt="TECHTIDE logo" class="logo">
+  </div>
+  <div class="header-title">
+    <h1>TECH<small>TIDE</small></h1>
+    <h2 class="tagline">Ride the Wave of <em class="accent">Innovation</em></h2>
+  </div>
+  <nav>
+    <a href="index.html" class="anchor">Home</a>
+    <a href="Products.html" class="anchor">Reviews</a>
+    <a href="Reviews.html" class="anchor">Products</a>
+    <a href="About.html" class="anchor">About Us</a>
+    <a href="Contact.html" class="anchor active">Contact Us</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="contact-hero">
+  <div class="contact-hero-label">Get In Touch</div>
+  <h2 class="contact-hero-title">Contact <span class="accent">Us</span></h2>
+  <p class="contact-hero-sub">Have a question, suggestion, or just want to say hello? We'd love to hear from you.</p>
+</section>
+
+<!-- CONTACT LAYOUT -->
+<main class="contact-layout container">
+
+  <!-- INFO CARDS -->
+  <aside class="contact-info">
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div>
+        <h4>Email Us</h4>
+        <p>hello@techtide.com</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div>
+        <h4>Our Office</h4>
+        <p>Innovation Hub, Karachi, PK</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+      <div>
+        <h4>Working Hours</h4>
+        <p>Mon – Fri, 9:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+    <div class="info-socials">
+      <p class="social-title">Follow Us</p>
+      <div class="social-row">
+        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- FORM -->
+  <div class="contact-form-wrap">
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="e.g. Ali Hassan" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="e.g. 22" min="1" max="120" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="gender" value="male" required>
+            <span class="radio-custom"></span> Male
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="female">
+            <span class="radio-custom"></span> Female
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="prefer-not">
+            <span class="radio-custom"></span> Prefer not to say
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Areas of Interest</label>
+        <div class="check-group">
+          <label class="check-label">
+            <input type="checkbox" name="interest" value="html">
+            <span class="check-custom"></span> HTML
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="interest" value="css">
+            <span class="check-custom"></span> CSS
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="interest" value="javascript">
+            <span class="check-custom"></span> JavaScript
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="interest" value="gadgets">
+            <span class="check-custom"></span> Gadgets
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message <span class="optional">(optional)</span></label>
+        <textarea id="message" rows="4" placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <span>Send Message</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+
+      <div class="success-msg" id="successMsg">
+        <i class="fa-solid fa-circle-check"></i> Message sent! We'll be in touch soon.
+      </div>
+
+    </form>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>TechTide</h2>
+      <p><i>Ride the Wave of Innovation</i></p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="Products.html">Reviews</a>
+      <a href="Reviews.html">News</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechTide. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.querySelector('.submit-btn');
+  const msg = document.getElementById('successMsg');
+  btn.disabled = true;
+  btn.innerHTML = '<span>Sending...</span><i class="fa-solid fa-spinner fa-spin"></i>';
+  setTimeout(() => {
+    btn.style.display = 'none';
+    msg.classList.add('visible');
+  }, 1200);
+}
+</script>
+
+</body>
+</html>

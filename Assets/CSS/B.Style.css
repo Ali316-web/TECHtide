@@ -1,0 +1,98 @@
+h1{
+    color: aliceblue; font-family: 'Orbitron', sans-serif;
+}
+
+.dropdown-item:hover{
+    color: cyan;
+}
+
+.dropdown-item{
+    border: 10px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bg-colour{
+    color: #121212;
+}
+
+.nav-link{
+        background-color: whitesmoke;
+        border: solid #FFFFFF;
+        border-radius: 10px;
+        color:black; font-family: 'Orbitron', sans-serif; 
+        font-size: 20px; background-color: aliceblue; text-decoration: none; border: 1px solid black;
+        padding: 3px !important;
+        margin: 5px;
+        transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: cyan; /* Change color on hover */
+    background-color: black; /* Optional background effect */
+    border-radius: 5px;
+}
+
+.fa-solid fa-magnifying-glass{
+    background-color: whitesmoke;
+        border: solid #FFFFFF;
+        border-radius: 10px;
+        color:black; font-family: 'Orbitron', sans-serif; 
+        font-size: 20px; background-color: aliceblue; text-decoration: none; border: 1px solid black;
+        padding: 3px !important;
+        margin: 5px;
+}
+
+.btn{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: 0.3 ease;
+    margin-left: 50%;
+}
+
+.btn:hover{
+    color: cyan;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(5, 74, 184);
+}
+
+.img{
+    height: 550px;
+}
+
+.navbar-logo{
+    height: 550px;                      
+}
+
+.custom-navbar {
+    max-width: 900px; /* Adjust as needed */
+    margin: 0 auto;    /* Center it */
+    border-radius: 12px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Optional: glowing effect */
+    padding: 0.5rem 1rem;
+}
+  
+.navbar .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+#p1{
+    font-size: 25px; color: aliceblue; font-family: 'Poppins', sans-serif;
+}
