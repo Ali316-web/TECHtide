@@ -1,10 +1,9 @@
-
 <!Doctype html>
 <html>
  <head>
    <title>TECHTide</title>
 
-   <link rel="stylesheet" href="Assets/CSS/style.css">
+   <link rel="stylesheet" href="Assets/CSS/STYLE.CSS">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="Assets/CSS/Reviews.css">
    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap-5.3.5-dist/css/bootstrap-grid.min.css">
@@ -23,6 +22,99 @@
    </style>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <style>
+  .product-table, .specs-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 95%;
+    margin: 30px auto;
+    background-color: #10151c;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.12);
+    font-family: 'Rajdhani', sans-serif;
+    color: #E8F1FF;
+  }
+
+  .product-table thead th, .specs-table thead th {
+    background: linear-gradient(180deg, #163040, #0d1b24);
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.5);
+  }
+
+  .product-table tbody td, .specs-table tbody td {
+    padding: 16px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .product-table tbody td:last-child, .specs-table tbody td:last-child {
+    border-right: none;
+  }
+
+  .specs-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 212, 255, 0.04);
+  }
+
+  .specs-table tbody tr:hover {
+    background-color: rgba(0, 212, 255, 0.1);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table tbody tr:hover td {
+    background-color: rgba(0, 212, 255, 0.08);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table td span, .specs-table td span {
+    color: #00D4FF;
+    font-weight: 600;
+  }
+
+  .specs-table td b {
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+  }
+
+  .product-table img {
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+    max-width: 100%;
+  }
+
+  .product-table tr:hover img {
+    transform: scale(1.05);
+  }
+
+  .price-row td {
+    background-color: rgba(0, 212, 255, 0.12) !important;
+    border-top: 2px solid rgba(0, 212, 255, 0.5);
+    padding: 18px 12px;
+  }
+
+  .price-row td b {
+    font-size: 16px;
+  }
+
+  .price-row td span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00FFC2;
+    text-shadow: 0 0 8px rgba(0, 255, 194, 0.4);
+  }
+   </style>
  </head>
 
  <img src="Assets/Images/TECHTIDE LOGO.png" width="100" height="100" style="position: absolute; top: 0; left: 0;" alt="TECHTIDE Logo">
@@ -50,50 +142,48 @@
      </div>
    </section>
 
-   <table align="center">  
+   <table class="product-table" style="table-layout:fixed;">  
+     <colgroup>
+       <col style="width:9%"><col style="width:16%">
+       <col style="width:9%"><col style="width:16%">
+       <col style="width:9%"><col style="width:16%">
+       <col style="width:9%"><col style="width:16%">
+     </colgroup>
      <thead>
        <tr align="center">
          <th><span>Srno.</span></th>
          <th><span>Products</span></th>
-         <th><span>Price</span></th>
 
          <th><span>Srno.</span></th>
          <th><span>Products</span></th>
-         <th><span>Price</span></th>
 
          <th><span>Srno.</span></th>
          <th><span>Products</span></th>
-         <th><span>Price</span></th>
 
          <th><span>Srno.</span></th>
          <th><span>Products</span></th>
-         <th><span>Price</span></th>
        </tr>
      </thead>
-     <tbody>
-       <tr>
+     <tbody style="text-align:center;">
+       <tr style="vertical-align:middle;">
          <td>1.</td>
-         <td><img src="Assets/Images/iphone 16.jpeg" alt="Iphone 16" align="center" width=90%></td>
-         <td>$:<span>799</span></td>
+         <td><img src="Assets/Images/iphone 16.jpeg" alt="Iphone 16" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
 
          <td>2.</td>
-         <td><img src="Assets/Images/iphone 16 plus.jpeg" alt="Iphone 16 Plus" align="center"></td>
-         <td>$:<span>899</span></td>
+         <td><img src="Assets/Images/iphone 16 plus.jpeg" alt="Iphone 16 Plus" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
 
          <td>3.</td>
-         <td><img src="Assets/Images/iphone 16 pro.jpeg" alt="Iphone 16 Pro" align="center"></td>
-         <td>$:<span>999</span></td>
+         <td><img src="Assets/Images/iphone 16 pro.jpeg" alt="Iphone 16 Pro" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
 
          <td>4.</td>
-         <td><img src="Assets/Images/iphone 16 pro max.jpeg" alt="Iphone 16 Pro Max" align="center"></td>
-         <td>$:<span>1,199</span></td>
+         <td><img src="Assets/Images/iphone 16 pro max.jpeg" alt="Iphone 16 Pro Max" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
        </tr>
      </tbody>
    </table>
 
    <hr>
 
-   <table border="1" align="center">
+   <table class="specs-table">
      <thead>
        <tr>
          <th>Specification:</th>
@@ -184,7 +274,7 @@
          <td>Black Titanium, White Titanium, Natural Titanium, Desert Titanium</td>
        </tr>
 
-       <tr>
+       <tr class="price-row">
          <td><b>Price:</b></td>
          <td>$:<span>799</span></td>
          <td>$:<span>899</span></td>
