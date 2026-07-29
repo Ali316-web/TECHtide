@@ -10,16 +10,108 @@
     <link rel="stylesheet" href="Assets/Bootstrap/bootstrap-5.3.5-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="Assets/CSS/Product.CSS">
    <style>
-      nav{
+      /* nav{
         background-color: whitesmoke;
         border: solid #FFFFFF;
         border-radius: 10px;
-      }
+      } */
       h4{
         color: #00D4FF; font-size: 15px; font-family: 'Orbitron', sans-serif;
       }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+  .product-table, .specs-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 95%;
+    margin: 30px auto;
+    background-color: #10151c;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.12);
+    font-family: 'Rajdhani', sans-serif;
+    color: #E8F1FF;
+  }
+
+  .product-table thead th, .specs-table thead th {
+    background: linear-gradient(180deg, #163040, #0d1b24);
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.5);
+  }
+
+  .product-table tbody td, .specs-table tbody td {
+    padding: 16px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .product-table tbody td:last-child, .specs-table tbody td:last-child {
+    border-right: none;
+  }
+
+  .specs-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 212, 255, 0.04);
+  }
+
+  .specs-table tbody tr:hover {
+    background-color: rgba(0, 212, 255, 0.1);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table tbody tr:hover td {
+    background-color: rgba(0, 212, 255, 0.08);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table td span, .specs-table td span {
+    color: #00D4FF;
+    font-weight: 600;
+  }
+
+  .specs-table td b {
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+  }
+
+  .product-table img {
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+    max-width: 100%;
+  }
+
+  .product-table tr:hover img {
+    transform: scale(1.05);
+  }
+
+  .price-row td {
+    background-color: rgba(0, 212, 255, 0.12) !important;
+    border-top: 2px solid rgba(0, 212, 255, 0.5);
+    padding: 18px 12px;
+  }
+
+  .price-row td b {
+    font-size: 16px;
+  }
+
+  .price-row td span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00FFC2;
+    text-shadow: 0 0 8px rgba(0, 255, 194, 0.4);
+  }
+   </style>
   </head>
 
  <h1 align='center'>TECH<small>TIDE</small></h1>
@@ -35,7 +127,7 @@
   </hgroup>
  <body>
    <h1 align="center">Produt Review</h1>
-   <hr>
+   
 
    <section class="review-video">
      <div class="video-container">
@@ -45,35 +137,38 @@
      </div>
     </section>
 
-   <table align="center">  
+   <table class="product-table" style="table-layout:fixed;">  
+    <colgroup>
+       <col style="width:25%"><col style="width:50%">
+     </colgroup>
      <thead>
        <tr align="center">
          <th><span>Srno.</span></th>
-         <th><span>Products</span></th>
-         <th><span>Price</span></th>
+         <th><span>Product</span></th>
+        
 
          <th><span>Srno.</span></th>
-         <th><span>Products</span></th>
-         <th><span>Price</span></th>
+         <th><span>Product</span></th>
+        
        </tr>
      </thead>
 
-     <tbody>
-       <tr>
+     <tbody style="text-align:center;">
+       <tr style="vertical-align:middle;">
          <td>1.</td>
-         <td><img src="Assets/Images/nothing phone 3a.jpeg" alt="Nothing Phone 3a" align="center" width=90%></td>
-         <td>$:<span>379</span></td>
+         <td><img src="Assets/Images/nothing phone 3a.jpeg" alt="Nothing Phone 3a" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
+         
 
          <td>2.</td>
-         <td><img src="Assets/Images/nothing phone 3a pro.jpeg" alt="Nothing Phone 3a Pro" align="center"></td>
-         <td>$:<span>459</span></td>
+         <td><img src="Assets/Images/nothing phone 3a pro.jpeg" alt="Nothing Phone 3a Pro" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
+         
        </tr>
      </tbody>
    </table>
 
-   <hr>
   
-   <table border="1" align="center">
+  
+   <table class="specs-table">
      <thead>
        <tr>
          <th>Specification:</th>
@@ -146,7 +241,7 @@
          <td>Black, Gray</td>
        </tr>
 
-       <tr>
+       <tr class="price-row">
          <td><b>Price:</b></td>
          <td>$:<span>379</span></td>
          <td>$:<span>459</span></td>
@@ -154,7 +249,7 @@
      </tbody>
    </table>
 
-   <hr>
+
 
    <b>Key Highlights:</b>
    <uL style="color: #FFFFFF;">
@@ -167,7 +262,7 @@
      <li><h4>Software Support:</h4><p style="color: #FFFFFF;">Both models run Nothing OS 2.5.5 on Android 14 out of the box, with a promise of 3 years of major Android updates and 4 years of security patches, providing a clean, near-stock Android experience.</p></li>
    </ul>
 
-   <hr>
+
 
    <div class="product-wrapper">
       <div class="product-box">
