@@ -10,15 +10,107 @@
      <link rel="stylesheet" href="Assets/Bootstrap/bootstrap-5.3.5-dist/css/bootstrap-grid.min.css">
      <link rel="stylesheet" href="Assets/CSS/Product.CSS">
       <style>
-         nav{
+         /* nav{
              background-color: whitesmoke;
              border: solid #FFFFFF;
              border-radius: 10px;
-            }
+            } */
          h4{
              color: #00D4FF; font-size: 15px; font-family: 'Orbitron', sans-serif;
             }
       </style>
+      <style>
+  .product-table, .specs-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 95%;
+    margin: 30px auto;
+    background-color: #10151c;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.12);
+    font-family: 'Rajdhani', sans-serif;
+    color: #E8F1FF;
+  }
+
+  .product-table thead th, .specs-table thead th {
+    background: linear-gradient(180deg, #163040, #0d1b24);
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.5);
+  }
+
+  .product-table tbody td, .specs-table tbody td {
+    padding: 16px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .product-table tbody td:last-child, .specs-table tbody td:last-child {
+    border-right: none;
+  }
+
+  .specs-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 212, 255, 0.04);
+  }
+
+  .specs-table tbody tr:hover {
+    background-color: rgba(0, 212, 255, 0.1);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table tbody tr:hover td {
+    background-color: rgba(0, 212, 255, 0.08);
+    transition: background-color 0.25s ease;
+  }
+
+  .product-table td span, .specs-table td span {
+    color: #00D4FF;
+    font-weight: 600;
+  }
+
+  .specs-table td b {
+    color: #00D4FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+  }
+
+  .product-table img {
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+    max-width: 100%;
+  }
+
+  .product-table tr:hover img {
+    transform: scale(1.05);
+  }
+
+  .price-row td {
+    background-color: rgba(0, 212, 255, 0.12) !important;
+    border-top: 2px solid rgba(0, 212, 255, 0.5);
+    padding: 18px 12px;
+  }
+
+  .price-row td b {
+    font-size: 16px;
+  }
+
+  .price-row td span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00FFC2;
+    text-shadow: 0 0 8px rgba(0, 255, 194, 0.4);
+  }
+   </style>
  </head>
  <h1 align='center'>TECH<small>TIDE</small></h1>
  <h2 align='center' style="color:#B0C4DE;  font-family: 'Space Grotesk', sans-serif;">Ride the Wave of <i><small style="color: #00D4FF;">Innovation</small></i></h2> 
@@ -34,45 +126,47 @@
  <body>
      <h1 align="center">Produts Review</h1>
 
-     <hr>
 
-      <table align="center">  
+      <table class="product-table" style="table-layout:fixed;">
+        <colgroup>
+       <col style="width:25%"><col style="width:50%">
+     </colgroup>  
          <thead>
               <tr align="center">
                  <th><span>Srno.</span></th>
-                 <th><span>Products</span></th>
-                 <th><span>Price</span></th>
+                 <th><span>Product</span></th>
+                
     
                  <th><span>Srno.</span></th>
-                 <th><span>Products</span></th>
-                 <th><span>Price</span></th>
+                 <th><span>Product</span></th>
+                
     
                  <th><span>Srno.</span></th>
-                 <th><span>Products</span></th>
-                 <th><span>Price</span></th>
+                 <th><span>Product</span></th>
+                
               </tr>
          </thead>
 
-          <tbody>
-               <tr>
+          <tbody style="text-align:center;">
+               <tr style="vertical-align:middle;">
                  <td>1.</td>
-                 <td><img src="Assets/Images/samsung galaxy a56.jpeg" alt="SAMSUNG GALAXY A56" align="center" width=90%></td>
-                 <td>$:<span>364.00</span></td>
+                 <td><img src="Assets/Images/samsung galaxy a56.jpeg" alt="SAMSUNG GALAXY A56" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
+   
     
                  <td>2.</td>
-                 <td><img src="Assets/Images/samsung galaxy a36.jpeg" alt="SAMSUNG GALAXY A36" align="center"></td>
-                 <td>$:<span>298.90</span></td>
+                 <td><img src="Assets/Images/samsung galaxy a36.jpeg" alt="SAMSUNG GALAXY A36" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
+                 
     
                  <td>3.</td>
-                 <td><img src="Assets/Images/samsung galaxy a26.jpeg" alt="SAMSUNG GALAXY A26" align="center"></td>
-                 <td>$:<span>240.00</span></td>
+                 <td><img src="Assets/Images/samsung galaxy a26.jpeg" alt="SAMSUNG GALAXY A26" style="display:block;margin:0 auto;width:120px;height:120px;object-fit:contain;"></td>
+                 
                </tr>
           </tbody>
       </table>  
 
-     <hr>
+     
 
-       <table border="1" align="center">
+       <table class="specs-table">
           <thead>
                <tr>
                  <th>Specification:</th>
@@ -153,7 +247,7 @@
                  <td>Black, Light Green</td>
                </tr>
 
-               <tr>
+               <tr class="price-row">
                  <td><b>Price:</b></td>
                  <td>$:<span>364.00</span></td>
                  <td>$:<span>298.90</span></td>
@@ -162,7 +256,7 @@
            </tbody>
       </table>
 
-     <hr>
+     
 
      <b>Key Highlights:</b>
      <uL style="color: #FFFFFF;">
@@ -174,12 +268,12 @@
          <li><h4>Software Support:</h4><p style="color: #FFFFFF;">Launching with Android 15 and One UI 7, the entire Galaxy A lineup promises 6 years of software and security updates, ensuring long-term reliability and access to the latest features.</p></li>
      </ul>
 
-     <hr>
+     
 
      <div class="product-wrapper">
          <div class="product-box">
              <img src="Assets/Images/samsung galaxy a56.jpeg" alt="SAMSUNG GALAXY A56" class="product-img">
-             <h4 class="product-title">SAMSUNG  GALAXY S25 ULTRA</h4>
+             <h4 class="product-title">SAMSUNG Galaxy A56</h4>
              <a href="https://www.samsung.com/pk/smartphones/galaxy-a/galaxy-a56-5g-awesome-pink-256gb-sm-a566bliwpkd/buy/" class="product-button" target="_blank" onclick="clicks()">Order</a> 
          </div>
      
@@ -189,7 +283,7 @@
              onmousedown="mousebuttonclick()"
              onmouseup="mousebuttonrealease()">
              <img src="Assets/Images/samsung galaxy a36.jpeg" alt="SAMSUNG GALAXY A36" class="product-img">
-             <h4 class="product-title">SAMSUNG  GALAXY S25+</h4>
+             <h4 class="product-title">SAMSUNG Galaxy A36</h4>
              <a href="https://www.samsung.com/pk/smartphones/galaxy-a36-5g/buy/?modelCode=SM-A366BLGVPKD" class="product-button" target="_blank" ondblclick="dbclicl()">Order</a> 
          </div>
      
@@ -199,7 +293,7 @@
              onmouseenter = "enter()"
              onmouseleave = "leave()">
              <img src="Assets/Images/samsung galaxy a26.jpeg" alt="SAMSUNG GALAXY A26" class="product-img">
-             <h4 class="product-title">SAMSUNG GALAXY S25</h4>
+             <h4 class="product-title">SAMSUNG Galaxy A26</h4>
              <a href="https://www.samsung.com/pk/smartphones/galaxy-a/galaxy-a26-5g-white-256gb-sm-a266bzwjpkd/buy/" class="product-button" target="_blank">Order</a> 
          </div>
      </div>
